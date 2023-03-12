@@ -4,8 +4,7 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Calendar tab</Text>
-        <Text style={styles.subtitle}>Calendar tab</Text>
+        <Text>Calendar tab</Text>
       </View>
     </View>
   );
@@ -22,13 +21,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     maxWidth: 960,
     marginHorizontal: "auto",
-  },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
   },
 });

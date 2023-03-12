@@ -1,11 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
+import { useAuth } from "../../context/auth";
 
 export default function Page() {
+  const { signOut } = useAuth();
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Settings tab</Text>
-        <Text style={styles.subtitle}>Settings tab</Text>
+        <Text>Settings tab</Text>
+        <Text onPress={signOut} style={styles.logout}>
+          Logout
+        </Text>
       </View>
     </View>
   );
@@ -23,12 +27,10 @@ const styles = StyleSheet.create({
     maxWidth: 960,
     marginHorizontal: "auto",
   },
-  title: {
-    fontSize: 64,
+  logout: {
+    color: "#007AFF",
+    marginTop: 10,
     fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
+    textAlign: "center",
   },
 });
