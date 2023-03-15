@@ -1,10 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
+import { useRouter } from "expo-router";
 
 export default function Page() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <View style={styles.main}>
         <Text>Home tab</Text>
+        <Text onPress={() => router.push("/home/event")}>Open a card</Text>
       </View>
     </View>
   );

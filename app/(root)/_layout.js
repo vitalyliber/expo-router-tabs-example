@@ -6,25 +6,25 @@ export default function AppLayout() {
       <Tabs.Screen
         name="home"
         options={{
-          href: '/home',
+          href: "/home",
         }}
       />
       <Tabs.Screen
         name="calendar"
         options={{
-          href: '/calendar',
+          href: "/calendar",
         }}
       />
       <Tabs.Screen
         name="cards"
         options={{
-          href: '/cards',
+          href: "/cards",
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
-          href: '/settings',
+          href: "/settings",
         }}
       />
     </Tabs>
